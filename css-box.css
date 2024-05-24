@@ -1,0 +1,50 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    font-weight: 700;
+   
+}
+.box_1{
+    background-color: yellow;
+    padding: 20px;
+    height: 50px;
+    margin: 30px;
+    width: 100px;
+    border: 5px solid brown;
+    text-align: center;
+    line-height: 50px;
+    border-radius: 30px;
+}
+.box_2{
+    background-size: cover;
+    background-color: black;
+    height: 50px;
+    width: 100px;
+    padding: 20px;
+    margin: 40px;
+    color: azure;
+    border-radius: 30px;
+    border: 6px solid rgb(191, 37, 37);
+    text-align: center;
+    line-height: 30px;
+}
+.box_1:hover{
+    color: aqua;
+    background-color: teal;
+    transform: rotateX(360deg);
+    transition-timing-function: cubic-bezier(0.19, 1, 0.22, 1);
+    transition-duration: 4s;
+}
+.box_2:hover{
+    color: chartreuse;
+    margin: 60px;
+   
+    animation-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1);
+
+    animation: Box 5s linear infinite;
+}
+@keyframes Box {
+    to{transform: rotate(360deg);}
+    from{transform: rotate3d(180deg);}
+    
+}

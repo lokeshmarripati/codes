@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        header{
+            background-color:beige;
+            padding: 15px;
+            margin: 10px;
+        }
+        h2{
+            text-align: center;
+            background-color: brown;
+            color: aliceblue;
+           
+        }
+        ul{
+            list-style: none;
+            background: chartreuse;
+            border-radius: 20px;
+            margin-top: 0px;
+            text-align: center;
+        }
+       ul li{
+        position: relative;
+      display: inline-block;    
+        }
+        ul li a{
+            display: block;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            text-decoration: none;
+            color: rgb(148, 25, 25);
+            padding: 10px;
+
+        }
+        ul li  ul.dropdown li{
+            display: block;
+        }
+        ul li ul.dropdown{
+            width: 90%;
+            background: rgb(190, 243, 46);
+            border-radius: 20px;
+            position: absolute;
+            z-index: 999;
+            display: none;
+        }
+        ul li:hover{
+            background-color: rgb(115, 115, 235);
+            border-radius: 20px;
+        }
+        ul li:hover ul.dropdown{
+            color: aliceblue;
+            display: block;
+
+        }
+        
+section.main-box article.inner-box{
+    width: 950px;
+    background-color: aliceblue;
+    margin: 0px auto;
+    display: flex;
+    
+}
+section.main-box article.inner-box .inner-item-box{
+    width: 10000px;
+    height: 500px;
+    border: 2px solid gray;
+    background-color: aliceblue;
+    text-align: center;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 20px;
+    line-height: 20px;
+    margin: 5px;
+    padding: 5px;
+
+}
+section.main-box article.inner-box .inner-item-box .image-box img.image-item{
+    width: 200px;
+    height: 200px;
+    background-size: cover;
+}
+section.main-box article.inner-box .inner-item-box .content-box{
+    width: 100%;
+}
+section.main-box article.inner-box .inner-item-box-1{
+    border: 1px solid rebeccapurple;
+    background-color: aqua;
+    color: rgb(50, 128, 205);
+   
+}
+section.main-box article.inner-box .inner-item-box-2{
+    border: 1px solid rebeccapurple;
+    background-color: rgb(81, 0, 255);
+    color: rgb(222, 252, 90);
+   
+} 
+section.main-box article.inner-box .inner-item-box-3{
+    border: 1px solid rgb(63, 197, 168);
+    background-color: rgb(154, 18, 95);
+    color: yellowgreen;
+   
+}
+section.main-box article.inner-box .inner-item-box-4{
+    border: 1px solid rgb(28, 46, 244);
+    background-color: rgb(207, 141, 36);
+    color: rgb(89, 159, 212);
+   
+}
+
+    </style>
+  </head>
+  <body>
+    <header>
+        <h2>Lyros Technology</h2>
+     
+    </header>
+    <nav>
+      <ul>
+        <li><a href="#">Home</a></li>
+      <li>
+        <a href="#">Education Details</a>
+        <ul class="dropdown">
+          <li><a href="#">BCOM</a></li>
+          <li><a href="#">BCA</a></li>
+          <li><a href="#">BTech</a></li>
+          <li><a href="#">MTech</a></li>
+        </ul>
+      </li>
+      <li><a href="#">Contact Us</a></li>
+      <li><a href="#">Carrer</a></li>
+      </ul>
+    </nav>
+    <section class="main-box">
+        <article class="inner-box">
+            <div class="inner-item-box inner-item-box-1">
+                <div class="image-box">
+                     <img src="image-folder/full_stack_banner.avif" alt="" class="image-item"/>
+                </div>
+                <div class="content-box">
+                    <h2 class="title">Developer</h2>
+                    <p class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores odit enim, vel sit cupiditate quasi reprehenderit minima quibusdam placeat, laudantium recusandae dolore necessitatibus amet quis assumenda rem. Officiis, libero iure!</p>
+                </div>
+            </div>
+
+            <div class="inner-item-box inner-item-box-1">
+                <div class="image-box">
+                  <img src="image-folder/full_stack_banner.avif" alt="" class="image-item"/>   
+                </div>
+                <div class="content-box">
+                    <h2 class="title">SQL</h2>
+                    <p class="text"> Lokesh </p>
+                </div>
+            </div>
+
+            <div class="inner-item-box inner-item-box-1">
+                <div class="image-box">
+                     <img src="image-folder/full_stack_banner.avif" alt="" class="image-item"/>    
+                </div>
+                <div class="content-box">
+                    <h2 class="title">Java</h2>
+                    <p class="text">This is Lokesh </p>
+                </div>
+            </div>
+
+            
+        </article>
+    </section>
+  </body>
+</html>

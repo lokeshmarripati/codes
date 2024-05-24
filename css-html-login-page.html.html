@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Document</title>
+    <style>
+      * {
+        margin: 0px;
+        padding: 0px;
+      }
+      a {
+        text-decoration: none;
+      }
+      .main {
+        width: 1200px;
+        background: linear-gradient(
+          to top,
+          rgba(0 0 0 0.5) 50%,
+          rgba(0, 0, 0, 0.5) 50%
+        );
+        background-image: url("https://www.diamondparks.com/assets/images/events/image-2b3.jpg");
+        background-size: cover;
+        height: 109vh;
+      }
+      .navbar {
+        width: 1200px;
+        height: 75px;
+        margin: auto;
+      }
+      .icon {
+        width: 200px;
+        float: left;
+        height: 70px;
+      }
+      .logo {
+        color: orange;
+        font-size: 40px;
+        font-family: "Courier New", Courier, monospace;
+        padding: 20px;
+        float: left;
+        padding-top: 10px;
+      }
+      .menu {
+        width: 1200px;
+        float: left;
+        height: 70px;
+      }
+      ul {
+        float: left;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      ul li {
+        list-style: none;
+        margin-left: 62px;
+        margin-top: 27px;
+        font-size: 14px;
+      }
+      ul li a {
+        text-decoration: none;
+        color: white;
+        font-family: Arial;
+        font-weight: bold;
+        transition: 5s linear initial;
+      }
+      ul li a:hover {
+        color: greenyellow;
+      }
+      .home {
+        animation-timing-function: cubic-bezier(0.165, 0.84, 0.44, 1);
+        animation: Home 5s linear infinite;
+      }
+      @keyframes Home {
+        from {
+          transform: rotate(45deg);
+        }
+        to {
+          transform: rotate3d(0deg);
+        }
+      }
+      .about {
+        animation-timing-function: cubic-bezier(0.165, 0.84, 0.44, 1);
+        animation: About 5s linear infinite;
+      }
+      @keyframes About {
+        from {
+          transform: rotateZ(360deg);
+        }
+        to {
+          transform: rotate(90deg);
+        }
+      }
+      .services {
+        animation-timing-function: cubic-bezier(0.165, 0.84, 0.44, 1);
+        animation: Home 5s linear infinite;
+      }
+      @keyframes Home {
+        from {
+          transform: rotate(45deg);
+        }
+        to {
+          transform: rotate3d(0deg);
+        }
+      }
+
+      .search {
+        width: 330px;
+        float: left;
+        margin-left: 270px;
+      }
+      .srch {
+        font-family: "Times New Roman";
+        width: 200px;
+        height: 18px;
+        background: transparent;
+        border: 1px solid goldenrod;
+        margin-top: 13px;
+        color: white;
+        border-right: none;
+        font-size: 16px;
+        float: left;
+        padding: 10px;
+        border-bottom-left-radius: 5px;
+        border-top-left-radius: 5px;
+      }
+      .btn {
+        width: 100px;
+        height: 40px;
+        background: orange;
+        border: 2px solid orange;
+        margin-top: 13px;
+        color: white;
+        font-size: 15px;
+        border-bottom-right-radius: 5px;
+        border-bottom-right-radius: 5px;
+      }
+      .btn:focus {
+        outline: none;
+      }
+      .srch:focus {
+        outline: none;
+      }
+      .content {
+        width: 1200px;
+        height: auto;
+        color: white;
+        position: relative;
+      }
+      .content .par {
+        padding-left: 20px;
+        padding-bottom: 25px;
+        font-family: Arial;
+        letter-spacing: 1.2px;
+        line-height: 20px;
+      }
+      .content h1 {
+        font-family: "Times New Roman";
+        font-size: 50px;
+        padding-left: 20px;
+        margin-top: 9%;
+        letter-spacing: 2px;
+      }
+      .content .cn {
+        width: 160px;
+        height: 40px;
+        background: orange;
+        border: none;
+        margin-bottom: 10px;
+        margin-left: 20px;
+        font-size: 20px;
+        border-radius: 10px;
+        cursor: pointer;
+      }
+      .form {
+        width: 250px;
+        height: 350px;
+        background: linear-gradient(
+          to top,
+          rgba(0, 0, 0, 0.8) 50%,
+          rgba(0, 0, 0, 0.8) 50%
+        );
+        position: absolute;
+        top: -20px;
+        left: 850px;
+        border-radius: 10px;
+        padding: 25px;
+      }
+      .form h2 {
+        width: 220px;
+        font-family: sans-serif;
+        text-align: center;
+        color: orange;
+        font-size: 22px;
+        background: white;
+        border-radius: 20px;
+        margin: 2px;
+        padding: 8px;
+      }
+      .form input {
+        width: 240px;
+        height: 35px;
+        background: transparent;
+        border-bottom: 1px solid orange;
+        border-top: none;
+        border-right: none;
+        border-left: none;
+        color: white;
+        font-size: 14px;
+        letter-spacing: 1px;
+        margin-top: 30px;
+        font-family: sans-serif;
+      }
+      .btnn {
+        width: 240px;
+        height: 40px;
+        background: orange;
+        border: none;
+        margin-top: 30px;
+        font-weight: 18px;
+        border-radius: 20px;
+        cursor: pointer;
+        transition: 0.4s ease;
+      }
+      .link {
+        margin-left: 10px;
+        margin-top: 30px;
+        font-weight: 18px;
+      }
+      .logo:hover {
+        color: red;
+        animation-timing-function: cubic-bezier(0.165, 0.84, 0.44, 1);
+        animation: Logo 7s linear infinite;
+      }
+      @keyframes Logo {
+        from {
+          transform: skewX(360deg);
+        }
+        to {
+          transform: scale3d(45deg);
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="main">
+      <div class="navbar">
+        <div class="icon">
+          <h2 class="logo">Lokesh</h2>
+        </div>
+        <div class="menu">
+          <ul>
+            <li class="home"><a href="#">HOME</a></li>
+            <li class="about"><a href="#">ABOUT</a></li>
+            <li class="services"><a href="#">SERVICE</a></li>
+            <li><a href="#">DESIGN</a></li>
+            <li><a href="#">CONTACT</a></li>
+          </ul>
+        </div>
+        <div class="search">
+          <input class="srch" type="name" placeholder="type to text" />
+          <a href="#"><button class="btn">Search</button></a>
+        </div>
+      </div>
+      <div class="content">
+        <h1>Web Design&<br /><span>Development</span><br />Course</h1>
+        <p class="par">
+          HTML is the standard markup language for creating websites and CSS
+          <br />
+          the language that describes the style of an HTML document. We will
+          combine HTML and CSS <br />
+          create a basic web page.
+        </p>
+
+        <button class="cn"><a href="#">JOIN US</a></button>
+        <div class="form">
+          <h2>Login Here</h2>
+          <input type="email" name="email" placeholder="Enter Email Here" />
+          <input type="passeord" name="" placeholder="Enter Password Here" />
+          <button class="btnn"><a href="#">Login</a></button>
+
+          <p class="link">Don't have an account</p>
+          <br />
+          <a href="#">Sign up here</a>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
